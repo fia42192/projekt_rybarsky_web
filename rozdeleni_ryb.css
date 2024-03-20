@@ -1,0 +1,156 @@
+body {
+    background: #141E30;
+    background: -webkit-linear-gradient(-45deg, #35577D, #141E30) fixed;
+    background: linear-gradient(-45deg, #35577D, #141E30) fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zarovnání obsahu na střed */
+}
+
+.border {
+    margin-left: 5px;
+    margin-right: 0px;
+    border: solid;
+    width: 100%;
+}
+
+.ul .panel{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.panel {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Rozšíření panelu na celou šířku obrazovky */
+    padding: 10px 0; /* Odsazení panelu */
+    
+}
+
+.panel li a {
+    color: white; /* Výchozí barva proklikových odkazů */
+    text-decoration: none; /* Odstranění podtržení */
+    transition: color 0.3s; /* Přechod pro plynulou změnu barvy */
+}
+
+.panel li a:hover {
+    color: lightblue; /* Barva proklikových odkazů po najetí kurzoru */
+    background-color: #331f44;
+    transform: scale(1.05); /* Zvětšení při najetí kurzorem */
+}
+
+.panel li a{
+    display: inline-block; /* Chceme mít odkazy jako bloky vedle sebe */
+    padding: 5px 10px; /* Upravte podle potřeby */
+    border-radius: 10px; /* Upravte poloměr zaoblení podle potřeby */
+    margin: 5px; /* Upravte podle potřeby */
+    transition: background-color 0.3s, transform 0.3s; /* Přidání přechodu */
+}
+
+.content {
+    width: 100%; /* Šířka obsahu */
+    padding: 20px; /* Odsazení obsahu */
+}
+
+
+ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0; /* Přidáno, aby odstranilo výchozí padding seznamu */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+p {
+    color: white; /* Barva textu "Ahoj" */
+    margin: 10px; /* Odsazení od ostatního obsahu */
+}
+
+h2 {
+    color: white; /* Barva textu "Ahoj" */
+    margin: 10px; /* Odsazení od ostatního obsahu */
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: white;
+    margin-left: 10px;
+}
+
+.uvod{
+    padding-top: 0px;
+}
+
+
+
+blockquote{
+    color: white;
+}
+
+
+
+li {
+    color: white;
+}
+
+hr {
+    border: none; /* Odstraní výchozí rámec */
+    border-top: 1px solid; /* Vytvoří horizontální čáru */
+    margin-top: 20px 0; /* Odsazení nad a pod čarou */
+    width: 100%; /* Šířka čáry, odpovídající šířce panelu */
+    color: white;
+}
+
+.stika {
+    margin-left: 20px; /* Vzdálenost od levého okraje */
+    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
+    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.kapr {
+    margin-left: 20px; /* Vzdálenost od levého okraje */
+    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
+    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.amur {
+    margin-left: 20px; /* Vzdálenost od levého okraje */
+    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
+    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.cejn {
+    margin-left: 20px; /* Vzdálenost od levého okraje */
+    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
+    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.tolstolobik {
+    margin-left: 20px; /* Vzdálenost od levého okraje */
+    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
+    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    width: 30%;
+    margin-bottom: 40px;
+}
