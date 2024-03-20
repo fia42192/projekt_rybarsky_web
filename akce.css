@@ -7,7 +7,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Zarovnání obsahu na střed */
+    align-items: center;
 }
 
 .border {
@@ -28,41 +28,41 @@ body {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    width: 100%; /* Rozšíření panelu na celou šířku obrazovky */
-    padding: 10px 0; /* Odsazení panelu */
+    width: 100%;
+    padding: 10px 0;
     
 }
 
 .panel li a {
-    color: white; /* Výchozí barva proklikových odkazů */
-    text-decoration: none; /* Odstranění podtržení */
-    transition: color 0.3s; /* Přechod pro plynulou změnu barvy */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .panel li a:hover {
-    color: lightblue; /* Barva proklikových odkazů po najetí kurzoru */
+    color: lightblue;
     background-color: #331f44;
-    transform: scale(1.05); /* Zvětšení při najetí kurzorem */
+    transform: scale(1.05);
 }
 
 .panel li a{
-    display: inline-block; /* Chceme mít odkazy jako bloky vedle sebe */
-    padding: 5px 10px; /* Upravte podle potřeby */
-    border-radius: 10px; /* Upravte poloměr zaoblení podle potřeby */
-    margin: 5px; /* Upravte podle potřeby */
-    transition: background-color 0.3s, transform 0.3s; /* Přidání přechodu */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .content {
-    width: 100%; /* Šířka obsahu */
-    padding: 20px; /* Odsazení obsahu */
+    width: 100%;
+    padding: 20px;
 }
 
 
 ul {
     list-style: none;
     margin: 10px;
-    padding: 0; /* Přidáno, aby odstranilo výchozí padding seznamu */
+    padding: 0;
 }
 
 a {
@@ -76,8 +76,8 @@ a:hover {
 }
 
 h2 {
-    color: white; /* Barva textu "Ahoj" */
-    margin: 10px; /* Odsazení od ostatního obsahu */
+    color: white;
+    margin: 10px;
 }
 
 h3 {
@@ -102,73 +102,73 @@ li {
 }
 
 hr {
-    border: none; /* Odstraní výchozí rámec */
-    border-top: 1px solid; /* Vytvoří horizontální čáru */
-    margin-top: 20px 0; /* Odsazení nad a pod čarou */
-    width: 100%; /* Šířka čáry, odpovídající šířce panelu */
+    border: none;
+    border-top: 1px solid;
+    margin-top: 20px 0;
+    width: 100%;
     color: white;
 }
 
 .forfishing {
     margin-top: 15px;
-    margin-left: 20px; /* Vzdálenost od levého okraje */
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
     width: 30%;
     margin-bottom: 5px;
 }
 
 p {
-    color: white; /* Barva textu "Ahoj" */
-    margin-left: 20px; /* Odsazení od ostatního obsahu */
+    color: white;
+    margin-left: 20px;
 }
 
 .ecac {
-    margin-left: 20px; /* Vzdálenost od levého okraje */
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
     width: 20%;
     margin-bottom: 5px;
 }
 
 
 .fishtimejaro {
-    margin-left: 20px; /* Vzdálenost od levého okraje */
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
     width: 30%;
     margin-bottom: 5px;
 }
 
 .fishtimejaro1 {
-    margin-left: 20px; /* Vzdálenost od levého okraje */
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
     width: 30%;
     margin-bottom: 5px;
 }
 
 .fishtimepodzim {
-    margin-left: 20px; /* Vzdálenost od levého okraje */
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
     width: 30%;
     margin-bottom: 5px;
 }
 
 
 .popelov {
-    margin-left: 20px; /* Vzdálenost od levého okraje */
-    border: 0px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    margin-left: 20px;
+    border: 0px solid white;
+    border-radius: 5px;
     width: 20%;
     margin-bottom: 5px;
 }
 
 .mrk {
-    margin-left: 20px; /* Vzdálenost od levého okraje */
-    border: 0px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    margin-left: 20px;
+    border: 0px solid white;
+    border-radius: 5px;
     width: 20%;
     margin-bottom: 5px;
 }

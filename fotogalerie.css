@@ -7,7 +7,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Zarovnání obsahu na střed */
+    align-items: center;
 }
 
 .border {
@@ -28,41 +28,41 @@ body {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    width: 100%; /* Rozšíření panelu na celou šířku obrazovky */
-    padding: 10px 0; /* Odsazení panelu */
+    width: 100%;
+    padding: 10px 0;
     
 }
 
 .panel li a {
-    color: white; /* Výchozí barva proklikových odkazů */
-    text-decoration: none; /* Odstranění podtržení */
-    transition: color 0.3s; /* Přechod pro plynulou změnu barvy */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .panel li a:hover {
-    color: lightblue; /* Barva proklikových odkazů po najetí kurzoru */
+    color: lightblue;
     background-color: #331f44;
-    transform: scale(1.05); /* Zvětšení při najetí kurzorem */
+    transform: scale(1.05);
 }
 
 .panel li a{
-    display: inline-block; /* Chceme mít odkazy jako bloky vedle sebe */
-    padding: 5px 10px; /* Upravte podle potřeby */
-    border-radius: 10px; /* Upravte poloměr zaoblení podle potřeby */
-    margin: 5px; /* Upravte podle potřeby */
-    transition: background-color 0.3s, transform 0.3s; /* Přidání přechodu */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .content {
-    width: 100%; /* Šířka obsahu */
-    padding: 20px; /* Odsazení obsahu */
+    width: 100%;
+    padding: 20px;
 }
 
 
 ul {
     list-style: none;
     margin: 10px;
-    padding: 0; /* Přidáno, aby odstranilo výchozí padding seznamu */
+    padding: 0;
 }
 
 a {
@@ -76,13 +76,13 @@ a:hover {
 }
 
 p {
-    color: white; /* Barva textu "Ahoj" */
-    margin: 10px; /* Odsazení od ostatního obsahu */
+    color: white;
+    margin: 10px;
 }
 
 h2 {
-    color: white; /* Barva textu "Ahoj" */
-    margin: 10px; /* Odsazení od ostatního obsahu */
+    color: white;
+    margin: 10px;
 }
 
 h3 {
@@ -107,10 +107,10 @@ li {
 }
 
 hr {
-    border: none; /* Odstraní výchozí rámec */
-    border-top: 1px solid; /* Vytvoří horizontální čáru */
-    margin-top: 20px 0; /* Odsazení nad a pod čarou */
-    width: 100%; /* Šířka čáry, odpovídající šířce panelu */
+    border: none;
+    border-top: 1px solid;
+    margin-top: 20px 0;
+    width: 100%;
     color: white;
 }
 
@@ -124,8 +124,8 @@ hr {
 
 .jeseter140cm {
     width: 75%;
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 .jeseter120cm {
@@ -133,8 +133,8 @@ hr {
     display: block;
     margin-left: 15px;
     margin-right: 15px;
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    border: 2px solid white;
+    border-radius: 5px;
     margin-bottom: 0px;
 }
 
@@ -143,8 +143,8 @@ hr {
     display: block;
     margin-left: 0px;
     margin-right: auto;
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    border: 2px solid white;
+    border-radius: 5px;
     margin-bottom: 0px;
 }
 
@@ -164,21 +164,20 @@ hr {
 
 .spolecnafotka {
     width: 60%;
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    border: 2px solid white;
+    border-radius: 5px;
     margin-top: 0px;
 }
 
 .kaprtovacov {
-    margin-left: 15px; /* Vzdálenost od levého okraje */
+    margin-left: 15px;
     margin-top: 0px;
     margin-right: 15px;
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
-    width: 100%; /* Nastavení šířky na automatické */
-    /*height: 100%; Nastavení výšky na 100% vzhledem k rodiči */
-    max-height: 13cm; /* Maximální výška obrázku */
-    object-fit: contain; /* Zachování poměru stran */
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 100%;
+    max-height: 13cm;
+    object-fit: contain;
 }
 
 .kapr1 {
@@ -187,8 +186,8 @@ hr {
     margin-left: 0px;
     margin-right: auto;
     margin-top: 0px;
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 
@@ -211,8 +210,8 @@ hr {
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 10px;
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 .pohary3 {
@@ -221,8 +220,8 @@ hr {
     margin-top: 10px;
     margin-left: 0px;
     margin-right: 15px;
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 .okoun {
@@ -231,8 +230,8 @@ hr {
     margin-left: 0px;
     margin-right: auto;
     margin-top: 10px;
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 .priroda {
@@ -241,6 +240,6 @@ hr {
     margin-left: 15px;
     margin-right: auto;
     margin-top: 10px;
-    border: 2px solid white; /* Rámeček o tloušťce 2px a bílé barvě */
-    border-radius: 5px; /* Volitelně: zakulacení rohů rámečku */
+    border: 2px solid white;
+    border-radius: 5px;
 }
