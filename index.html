@@ -6,10 +6,24 @@
     <title>Hlavní stránka</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="ikona.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <div class="border">
         <ul class="panel">
+            <li class="hideOnMobile"><a href="index.html">Domovská stránka</a></li>
+            <li class="hideOnMobile"><a href="rybarsky_rad.html">Rybářský řád</a></li>
+            <li class="hideOnMobile"><a href="rozdeleni_ryb.html">Rozdělení ryb</a></li>
+            <li class="hideOnMobile"><a href="svazove_reviry.html">Svazové revíry</a></li>
+            <li class="hideOnMobile"><a href="soukrome_reviry.html">Soukromé revíry</a></li>
+            <li class="hideOnMobile"><a href="moje_zk.html">Moje úspěchy</a></li>
+            <li class="hideOnMobile"><a href="vybava.html">Vybavení</a></li>
+            <li class="hideOnMobile"><a href="fotogalerie.html">Fotogalerie</a></li>
+            <li class="hideOnMobile"><a href="akce.html" id="panel-link">Akce roku 2024</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="material-symbols-outlined">menu</i></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><i class="material-symbols-outlined">close</i></a></li>
             <li><a href="index.html">Domovská stránka</a></li>
             <li><a href="rybarsky_rad.html">Rybářský řád</a></li>
             <li><a href="rozdeleni_ryb.html">Rozdělení ryb</a></li>
@@ -28,12 +42,24 @@
     <h1>Vítejte na mé webové stránce</h1>
     <h2>Úvod</h2>
     <p>Tento web vznikl za účelem splnění projektu,<br> tato stránka slouží pouze jako domovská stránka a rozcestník na další části této webové stránky.</p>
+    <h3>Co na této stránce najdete?</h3>
+    <ul></ul>
+        <li>Rybářský řád - pár základních pravidel rybolovu</li>
+        <li>Rozdělení ryb dle potravy</li>
+        <li>Hodnocení mých pěti oblíbených svazových revírů</li>
+        <li>Hodnocení mých dvou oblíbených soukromých revírů</li>
+        <li>Moje úspěchy a kariéra</li>
+        <li>Jaké vybavení používám</li>
+        <li>Základní fotogalerie</li>
+        <li>Pár akcí roku 2024</li>
+    </ul>
     <div class="uvodni_fotka">
         <img src="uvodni_stranka.jpg" width="20%">
         <p>obrázek slouží pouze pro vyplnění obsahu stránky</p>
     </div>
     <p class="kontakt">Zde je odkaz na <a href="https://github.com/fia42192" target="_blank">Github</a></p>
     </div>
+<script src="script.js"></script>
 </body> 
 </html>
 

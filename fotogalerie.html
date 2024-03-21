@@ -6,11 +6,25 @@
     <title>Fotogalerie</title>
     <link rel="stylesheet" href="fotogalerie.css">
     <link rel="icon" href="ikona.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
     <div class="border">
-        
         <ul class="panel">
+            <li class="hideOnMobile"><a href="index.html">Domovská stránka</a></li>
+            <li class="hideOnMobile"><a href="rybarsky_rad.html">Rybářský řád</a></li>
+            <li class="hideOnMobile"><a href="rozdeleni_ryb.html">Rozdělení ryb</a></li>
+            <li class="hideOnMobile"><a href="svazove_reviry.html">Svazové revíry</a></li>
+            <li class="hideOnMobile"><a href="soukrome_reviry.html">Soukromé revíry</a></li>
+            <li class="hideOnMobile"><a href="moje_zk.html">Moje úspěchy</a></li>
+            <li class="hideOnMobile"><a href="vybava.html">Vybavení</a></li>
+            <li class="hideOnMobile"><a href="fotogalerie.html">Fotogalerie</a></li>
+            <li class="hideOnMobile"><a href="akce.html" id="panel-link">Akce roku 2024</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="material-symbols-outlined">menu</i></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><i class="material-symbols-outlined">close</i></a></li>
             <li><a href="index.html">Domovská stránka</a></li>
             <li><a href="rybarsky_rad.html">Rybářský řád</a></li>
             <li><a href="rozdeleni_ryb.html">Rozdělení ryb</a></li>
@@ -47,6 +61,6 @@
 
         
 
-    
+<script src="script.js"></script>   
 </body>
 </html>

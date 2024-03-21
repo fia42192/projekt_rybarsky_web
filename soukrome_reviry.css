@@ -201,3 +201,63 @@ h4 {
 .konec2 {
     margin-bottom: 20px;
 }
+
+
+/* Side bar */
+
+.sidebar {
+    width: 100%;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.sidebar li {
+    height: 50px;
+}
+
+.sidebar a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: 0.3;
+}
+
+.sidebar a:hover {
+    background-color: lightblue;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.sidebar li:first-child {
+    margin-right: auto;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL'0,'wght'400, ;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+        transition: ease;
+    }
+}
+
+@media(max-width: 550px){
+    .sidebar{
+        width: 100%;
+    }
+}
