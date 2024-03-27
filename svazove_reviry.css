@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .border {
@@ -17,7 +18,7 @@ body {
     width: 100%;
 }
 
-.ul .panel{
+.ul .panel {
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -30,22 +31,22 @@ body {
     justify-content: space-around;
     width: 100%;
     padding: 10px 0;
-    
+
 }
 
 .panel li a {
-    color: white; 
+    color: white;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .panel li a:hover {
     color: lightblue;
-    background-color: #331f44;
+    background-color: #0b2f59;
     transform: scale(1.05);
 }
 
-.panel li a{
+.panel li a {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 10px;
@@ -90,11 +91,11 @@ h3 {
     margin-left: 10px;
 }
 
-.uvod{
+.uvod {
     padding-top: 0px;
 }
 
-.doba{
+.doba {
     padding-top: 30px;
 }
 
@@ -102,15 +103,15 @@ h3 {
     padding-top: 20px;
 }
 
-blockquote{
+blockquote {
     color: white;
 }
 
-.potrebneVeci{
+.potrebneVeci {
     padding-top: 20px;
 }
 
-.pravidla{
+.pravidla {
     padding-top: 20px;
 }
 
@@ -118,8 +119,9 @@ blockquote{
     padding-top: 20px;
 }
 
-.miryryb{
-    padding-left: 20px;;
+.miryryb {
+    padding-left: 20px;
+    ;
 }
 
 li {
@@ -187,7 +189,7 @@ hr {
     border: 2px solid white;
     border-radius: 5px;
     width: 30%;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
 .zacatek {
@@ -204,7 +206,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} 
+}
 
 .sidebar li {
     height: 50px;
@@ -231,25 +233,73 @@ hr {
 }
 
 .material-symbols-outlined {
-    font-variation-settings: 'FILL'0,'wght'400, ;
+    font-variation-settings: 'FILL' 0, 'wght' 400, ;
 }
 
 .menu-button {
     display: none;
 }
 
-@media(max-width: 1000px){
-    .hideOnMobile{
+@media(max-width: 1000px) {
+    .hideOnMobile {
         display: none;
     }
-    .menu-button{
+
+    .menu-button {
         display: block;
         transition: ease;
     }
 }
 
-@media(max-width: 550px){
-    .sidebar{
+@media(max-width: 550px) {
+    .sidebar {
         width: 100%;
     }
 }
+
+.svaz {
+    background-color: black;
+    border-radius: 15px;
+    transform: scale(1);
+}
+
+.svaz:hover {
+    background-color: #0b2f59;
+    transform: scale(1.05);
+}
+
+/* Skryj všechny revíry */
+.revir {
+    display: none;
+}
+
+/* Zobraz pouze aktivní revír */
+.revir.active {
+    display: block;
+}
+
+
+#reviryButtons {
+    margin-left: 20px; /* Odsazení od levého kraje */
+  }
+  
+  #reviryButtons button {
+    width: 90px; /* Šířka tlačítka */
+    height: 50px; /* Výška tlačítka */
+    padding: 10px; /* Vnitřní odsazení */
+    margin: 0 5px; /* Odsazení mezi tlačítky */
+    background-color: #0b2f73; /* Barva pozadí */
+    border: none; /* Bez rámečku */
+    cursor: pointer; /* Ukazatel myši se změní na ukazatel ruky při najetí */
+    border-radius: 5px; /* Zaoblené rohy */
+  }
+  
+  #reviryButtons button svg {
+    width: 100%; /* Šířka ikony */
+    height: 100%; /* Výška ikony */
+  }
+  
+  #reviryButtons button:hover {
+    background-color: #0b2f59; /* Barva pozadí při najetí myši */
+    transition: background-color 0.3s; /* Plynulý přechod barvy pozadí */
+  }

@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .border {
@@ -41,7 +42,7 @@ body {
 
 .panel li a:hover {
     color: lightblue;
-    background-color: #331f44;
+    background-color: #0b2f59;
     transform: scale(1.05);
 }
 
@@ -230,4 +231,15 @@ p {
     .sidebar{
         width: 100%;
     }
+}
+
+.akce {
+    background-color: black;
+    border-radius: 15px;
+    transform: scale(1);
+}
+
+.akce:hover {
+    background-color: #0b2f59;
+    transform: scale(1.05);
 }

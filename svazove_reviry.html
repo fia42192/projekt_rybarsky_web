@@ -15,7 +15,7 @@
             <li class="hideOnMobile"><a href="index.html">Domovská stránka</a></li>
             <li class="hideOnMobile"><a href="rybarsky_rad.html">Rybářský řád</a></li>
             <li class="hideOnMobile"><a href="rozdeleni_ryb.html">Rozdělení ryb</a></li>
-            <li class="hideOnMobile"><a href="svazove_reviry.html">Svazové revíry</a></li>
+            <li class="hideOnMobile svaz"><a href="svazove_reviry.html">Svazové revíry</a></li>
             <li class="hideOnMobile"><a href="soukrome_reviry.html">Soukromé revíry</a></li>
             <li class="hideOnMobile"><a href="moje_zk.html">Moje úspěchy</a></li>
             <li class="hideOnMobile"><a href="vybava.html">Vybavení</a></li>
@@ -43,47 +43,62 @@
         
         <hr>
 
-        <h3><a href="https://www.najdirevir.cz/o/471168-bystrice-hanacka-2-b" target="_blank">Přehrada Velká bystřice</a></h3>
-        <p>Tato vodní nádrž, vzdálená asi 5km od Olomouce, patří mezi mé nejoblibenější a nejnavštěvovanější revíry. Je to zřejmě z toho důvodu, že je to nejbližší "lepší" revír u Olomouce.<br>U hráze je největší hloubka asi 5m, sedimentem na dně je převážně bahno, kde lze chytat je zde vyznačeno cedulemi<br>Chodím zde už osmým rokem a chytl jsem zde desítky kaprů, největší měřil asi 55 cm, který mi také vyhrál závody v roce 2017.<br>Vyskytují se zde kapři, amuři, sumci, štiky, candáti a mnoho dalších druhů ryb.<br><br>Rozloha: 3,7 ha<br>Číslo revíru: 471 168</p>
-        <p><br>Nejoblibenější nástrahou je zde kukuřice <a href="https://www.bonduelle.cz/zelenina/p/gold-zlata-kukurice/03083680086936" target="_blank">Bonduelle</a> nebo <a href="https://www.na-haku.cz/cukk-jahoda-cervena-sladka-kukurice-220ml/?gad_source=1&gclid=CjwKCAjw48-vBhBbEiwAzqrZVCMC-vkNvlWnsSpvq5tbtZJ1S5bYeHECzhUPrxm35GnI-vGhA7elExoCRx8QAvD_BwE" target="_blank">kukučice s příchutí Jahody</a>.</p>
-        <img class="velkabystrice" src="velkabystrice.jpg" width="40%">
+                <!-- Přidej tlačítka pro přepínání mezi revíry -->
+        <div id="reviryButtons">
+            <button onclick="changeRevir(-1)"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg></button>
+            <button onclick="changeRevir(1)"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg></button>
+            <!-- Přidej další tlačítka pro další revíry -->
+        </div>
+        
+        <!-- Přidej kontejnery pro obsah jednotlivých revírů -->
+        <div id="reviryContent">
+            <div id="revir1" class="revir">
+                <h3><a href="https://www.najdirevir.cz/o/471168-bystrice-hanacka-2-b" target="_blank">Přehrada Velká bystřice</a></h3>
+                <p>Tato vodní nádrž, vzdálená asi 5km od Olomouce, patří mezi mé nejoblibenější a nejnavštěvovanější revíry. Je to zřejmě z toho důvodu, že je to nejbližší "lepší" revír u Olomouce.<br>U hráze je největší hloubka asi 5m, sedimentem na dně je převážně bahno, kde lze chytat je zde vyznačeno cedulemi<br>Chodím zde už osmým rokem a chytl jsem zde desítky kaprů, největší měřil asi 55 cm, který mi také vyhrál závody v roce 2017.<br>Vyskytují se zde kapři, amuři, sumci, štiky, candáti a mnoho dalších druhů ryb.<br><br>Rozloha: 3,7 ha<br>Číslo revíru: 471 168</p>
+                <p><br>Nejoblibenější nástrahou je zde kukuřice <a href="https://www.bonduelle.cz/zelenina/p/gold-zlata-kukurice/03083680086936" target="_blank">Bonduelle</a> nebo <a href="https://www.na-haku.cz/cukk-jahoda-cervena-sladka-kukurice-220ml/?gad_source=1&gclid=CjwKCAjw48-vBhBbEiwAzqrZVCMC-vkNvlWnsSpvq5tbtZJ1S5bYeHECzhUPrxm35GnI-vGhA7elExoCRx8QAvD_BwE" target="_blank">kukučice s příchutí Jahody</a>.</p>
+                <img class="velkabystrice" src="velkabystrice.jpg" width="40%">
+            </div>
+            
+            <div id="revir2" class="revir">
+                <h3><a href="https://www.najdirevir.cz/o/471215-olomoucke-sterkovny-1-b-11-slavonin" target="_blank">Hamrys</a></h3>
+                <p>Tento revír je jeden z mnoha podrevírů olomouckých štěrkoven 1B, nachází ve Slavoníně.<br>Na tomto revíru jsem strávil nespočet hodin, ale je zde zásadní omezení, horní věková hranice rybáře je zde 15 let.<br>Hloubka je tu maximálně okolo dvou metrů, dokonce se zde dá uprostřed jít po dně, sedimentem na jdě je písek a štěrk, na některých místech je i trochu bahna.<br>Bohužel zde není moc klidu, za zády vám neustále chodí lidé, kteří jdou na procházku, jdou krmit kačeny a tak plaší i ryby.<br>Na tento revír jsem začal chodit vrámci kroužku, který pořádá Milan Stejskal a tak jsem zde chytal skoro každý pátek.<br>Vyskytují se zde kapři, amuři, dříve zde byl i sumec, nějaké štiky a hodně karasů.<br><br>Rozloha: 1,5 ha<br>Číslo revíru: 471 215<br>Podrevír: 11</p>
+                <p><br>Nejoblibenější nástrahou je zde <a href="https://www.rybashop.cz/cz/cukk-kukurice-nakladana-bez-nalevu-cesnek?gad_source=1&gclid=Cj0KCQjwhtWvBhD9ARIsAOP0GognV3TtfC34GCCJ3pURHkUIpUhiJ8NWkxS7FXFgezZA8TNchh3B_cQaAnqVEALw_wcB" target="_blank">kukučice s příchutí česneku</a> nebo <a href="https://www.rco-fishing.cz/eshop/pelety-lk-baits-salt-black-hallibut-pellets-1kg" target="_blank">Hallibut pelety</a>.</p>
+                <img class="hymrys" src="hamrys.jpg" width="40%">
+            </div>
+            
+            
+            <div id="revir3" class="revir">
+                <h3><a href="https://www.najdirevir.cz/o/471005-becva-2-becva-2" target="_blank">Řeka Bečva</a></h3>
+                <p>Tento revír je asi mojí nejoblibenější řekou, je zde dobrý, ale prudký přístup k vodě, chodívám proti proudu od mostu v <a href="https://www.google.com/maps/@49.5090722,17.5377942,3a,50.7y,58.12h,75.7t/data=!3m7!1e1!3m5!1sR7gynab6v5dFTmjyQAnH2Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DR7gynab6v5dFTmjyQAnH2Q%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D29.243757%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu" target="_blank">Oseku nad Bečvou</a>, není zde žádný stín od stromů, za to se zde dá dobře nahazovat.<br>Voda uprostřed je zde hluboká asi 1,8-2m, ovšem jsou zde jámy, kde může být i více. Sediment zde tvoří převážně bahno, pod vodou nejsou žádné spadené stromy ani kořeny.<br>Na této řece nejraději chodím chytat na feeder, jelikož je zde velká rozmanitost ryb, dá se zde chytit klidně 50 ryb za hodinu. Největší rybu jsem zde chytil asi štiku, měřila 64 cm, zároveň to byla moje první výprava na přívlač.<br>Vyskytují se zde snad všechny druhy ryb.</p>
+                <p>Celková délka toku: 13,3 km<br>Číslo revíru: 471 005</p>
+                <p>Nejoblibenější nástrahou jsou zde masní červi společně s kukuřicí <a href="https://www.bonduelle.cz/zelenina/p/gold-zlata-kukurice/03083680086936" target="_blank">Bonduelle.</a></p>
+                <img class="becva" src="becva.jpg" width="40%">
+            </div>
 
-        <hr>
+            <div id="revir4" class="revir">
+                <h3><a href="https://www.najdirevir.cz/o/471049-morava-18-stara-morava" target="_blank">Řeka Morava (18)</a></h3>
+                <p>Na této řece jsem zatím nebyl tolikrát, ale i tak ji řadím mezi mé nejoblibenější revíry.<br>Nejlepší úsek podle mého názoru začíná hned pod Olomoucí po Dub nad Moravou, je to zde opravdu zarostlé a člověk si zde připadá jako v pralese, ozývají se zde různí ptáci, je tu krásná příroda,<br>viděl jsem tu několik divokých prasat, srnek a vyskytují se zde i mýval severní (viz. foto.).</p>
+                <img class="myval" src="myval.jpeg" width="40%">
+                <p>Voda je zde hluboká v průměru asi 2m, místy může být i o metr možná i o dva hlubší, je zde tedy skvělé prostředSí na sumce, kteří zde můžou mít až 2,6m, jsou zde však i ostatní ryby velké.<br>Dno je převážně bahenité, pod vodou je hodně popadaných stromů, různých kořenů a podobných věcí, které jsou skvělým úkrytem pro dravce.<br>Zde je za mě nejlepší chytat na feeder nebo zkusit chytit nějakého dravce, ať už je to na živou či mrtvou rybku, nebo třeba na přívlač.<br>Vyskytují se zde snad všechny druhy ryb, včetně Mníka jednovousého.</p>
+                <p>Celková délka toku: 30 km<br>Číslo revíru: 471 049</p>
+                <p>Nejoblibenější nástrahou jsou zde červi, na dravce pak nástražní rybičky.</p>
+                <img class="morava" src="morava.jpg" width="40%">
+            </div>
+                
+            <div id="revir5" class="revir">
+                <h3><a href="https://www.najdirevir.cz/o/471198-svrcov-1-a">Rybník Svrčov 1A, Prostřední Svrčov</a></h3>
+                <p>Nádrž Svrčov se rozděluje na 3 menší nádrže, já mám nejraději nádrž č. 2, tzv. Prostřední Svrčov. Byl jsem tu jen párkrát, ale zato jsem si zde dobře zachytal,<br>jedním z důvodů proč zde rád chodím, jsou úhoři, které se mi nepodařilo chytit na žádném jiném revíru.<br>Jestliže chceme chytit úhoře, je dobré zde chytat na žížaly či masné červy, ideálně po setmění, ale lze i přes den.<br>Chytil jsem zde zatím jen pár úhořů a kaprů, ale bude zde i mnoho dalších druhů ryb.</p>
+                <img class="uhor" src="uhor.jpg" width="40%">
+                <p>Voda zde bude hluboká do dvou metrů, dno je bahenité, na protějším břehu je hodně stromů a jejich větve sahají až do vody, takže se schovávají přes den schovávají právě zde.<br>Chytal jsem zde akorát na feeder a na "těžko".</p>
+                <p>Rozloha: 0,42 ha<br>Číslo revíru: 471 198</p>
+                <p>Nejoblibenější nástrahou jsou zde žížaly, masní červi a kukuřice.</p>
+                <img class="svrcov" src="svrcov.jpg" width="40%">
+            </div>
 
-        <h3><a href="https://www.najdirevir.cz/o/471215-olomoucke-sterkovny-1-b-11-slavonin" target="_blank">Hamrys</a></h3>
-        <p>Tento revír je jeden z mnoha podrevírů olomouckých štěrkoven 1B, nachází ve Slavoníně.<br>Na tomto revíru jsem strávil nespočet hodin, ale je zde zásadní omezení, horní věková hranice rybáře je zde 15 let.<br>Hloubka je tu maximálně okolo dvou metrů, dokonce se zde dá uprostřed jít po dně, sedimentem na jdě je písek a štěrk, na některých místech je i trochu bahna.<br>Bohužel zde není moc klidu, za zády vám neustále chodí lidé, kteří jdou na procházku, jdou krmit kačeny a tak plaší i ryby.<br>Na tento revír jsem začal chodit vrámci kroužku, který pořádá Milan Stejskal a tak jsem zde chytal skoro každý pátek.<br>Vyskytují se zde kapři, amuři, dříve zde byl i sumec, nějaké štiky a hodně karasů.<br><br>Rozloha: 1,5 ha<br>Číslo revíru: 471 215<br>Podrevír: 11</p>
-        <p><br>Nejoblibenější nástrahou je zde <a href="https://www.rybashop.cz/cz/cukk-kukurice-nakladana-bez-nalevu-cesnek?gad_source=1&gclid=Cj0KCQjwhtWvBhD9ARIsAOP0GognV3TtfC34GCCJ3pURHkUIpUhiJ8NWkxS7FXFgezZA8TNchh3B_cQaAnqVEALw_wcB" target="_blank">kukučice s příchutí česneku</a> nebo <a href="https://www.rco-fishing.cz/eshop/pelety-lk-baits-salt-black-hallibut-pellets-1kg" target="_blank">Hallibut pelety</a>.</p>
-        <img class="hymrys" src="hamrys.jpg" width="40%">
-
-        <hr>
-
-        <h3><a href="https://www.najdirevir.cz/o/471005-becva-2-becva-2" target="_blank">Řeka Bečva</a></h3>
-        <p>Tento revír je asi mojí nejoblibenější řekou, je zde dobrý, ale prudký přístup k vodě, chodívám proti proudu od mostu v <a href="https://www.google.com/maps/@49.5090722,17.5377942,3a,50.7y,58.12h,75.7t/data=!3m7!1e1!3m5!1sR7gynab6v5dFTmjyQAnH2Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DR7gynab6v5dFTmjyQAnH2Q%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D29.243757%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu" target="_blank">Oseku nad Bečvou</a>, není zde žádný stín od stromů, za to se zde dá dobře nahazovat.<br>Voda uprostřed je zde hluboká asi 1,8-2m, ovšem jsou zde jámy, kde může být i více. Sediment zde tvoří převážně bahno, pod vodou nejsou žádné spadené stromy ani kořeny.<br>Na této řece nejraději chodím chytat na feeder, jelikož je zde velká rozmanitost ryb, dá se zde chytit klidně 50 ryb za hodinu. Největší rybu jsem zde chytil asi štiku, měřila 64 cm, zároveň to byla moje první výprava na přívlač.<br>Vyskytují se zde snad všechny druhy ryb.</p>
-        <p>Celková délka toku: 13,3 km<br>Číslo revíru: 471 005</p>
-        <p>Nejoblibenější nástrahou jsou zde masní červi společně s kukuřicí <a href="https://www.bonduelle.cz/zelenina/p/gold-zlata-kukurice/03083680086936" target="_blank">Bonduelle.</a></p>
-        <img class="becva" src="becva.jpg" width="40%">
-
-        <hr>
-    
-        <h3><a href="https://www.najdirevir.cz/o/471049-morava-18-stara-morava" target="_blank">Řeka Morava (18)</a></h3>
-        <p>Na této řece jsem zatím nebyl tolikrát, ale i tak ji řadím mezi mé nejoblibenější revíry.<br>Nejlepší úsek podle mého názoru začíná hned pod Olomoucí po Dub nad Moravou, je to zde opravdu zarostlé a člověk si zde připadá jako v pralese, ozývají se zde různí ptáci, je tu krásná příroda,<br>viděl jsem tu několik divokých prasat, srnek a vyskytují se zde i mýval severní (viz. foto.).</p>
-        <img class="myval" src="myval.jpeg" width="40%">
-        <p>Voda je zde hluboká v průměru asi 2m, místy může být i o metr možná i o dva hlubší, je zde tedy skvělé prostředSí na sumce, kteří zde můžou mít až 2,6m, jsou zde však i ostatní ryby velké.<br>Dno je převážně bahenité, pod vodou je hodně popadaných stromů, různých kořenů a podobných věcí, které jsou skvělým úkrytem pro dravce.<br>Zde je za mě nejlepší chytat na feeder nebo zkusit chytit nějakého dravce, ať už je to na živou či mrtvou rybku, nebo třeba na přívlač.<br>Vyskytují se zde snad všechny druhy ryb, včetně Mníka jednovousého.</p>
-        <p>Celková délka toku: 30 km<br>Číslo revíru: 471 049</p>
-        <p>Nejoblibenější nástrahou jsou zde červi, na dravce pak nástražní rybičky.</p>
-        <img class="morava" src="morava.jpg" width="40%">
-
-        <hr>
-
-        <h3><a href="https://www.najdirevir.cz/o/471198-svrcov-1-a">Rybník Svrčov 1A, Prostřední Svrčov</a></h3>
-        <p>Nádrž Svrčov se rozděluje na 3 menší nádrže, já mám nejraději nádrž č. 2, tzv. Prostřední Svrčov. Byl jsem tu jen párkrát, ale zato jsem si zde dobře zachytal,<br>jedním z důvodů proč zde rád chodím, jsou úhoři, které se mi nepodařilo chytit na žádném jiném revíru.<br>Jestliže chceme chytit úhoře, je dobré zde chytat na žížaly či masné červy, ideálně po setmění, ale lze i přes den.<br>Chytil jsem zde zatím jen pár úhořů a kaprů, ale bude zde i mnoho dalších druhů ryb.</p>
-        <img class="uhor" src="uhor.jpg" width="40%">
-        <p>Voda zde bude hluboká do dvou metrů, dno je bahenité, na protějším břehu je hodně stromů a jejich větve sahají až do vody, takže se schovávají přes den schovávají právě zde.<br>Chytal jsem zde akorát na feeder a na "těžko".</p>
-        <p>Rozloha: 0,42 ha<br>Číslo revíru: 471 198</p>
-        <p>Nejoblibenější nástrahou jsou zde žížaly, masní červi a kukuřice.</p>
-        <img class="svrcov" src="svrcov.jpg" width="40%">
-
-        <h3>Toto bylo mých 5 nejoblibenějších revírů, na které se hodlám i tento rok vracet a chytit ještě lepší úlovky, než v uplynulých sezónách.</h3>
+            <!-- Přidej další kontejnery pro další revíry -->
+        </div>
+            
+        <h3>Toto je mých 5 nejoblibenějších revírů, na které se hodlám i tento rok vracet a chytit ještě lepší úlovky, než v uplynulých sezónách.</h3>
     </div>
 
         
