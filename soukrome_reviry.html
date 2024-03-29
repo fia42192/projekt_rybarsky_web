@@ -37,119 +37,130 @@
         </ul>
     </div>
     <hr>
-    <div class="content">
-        <p class="uvod">Zde se dozvíte něco o mých dvou nejoblibenější soukromých revírech, jedná se o <a href="http://www.skalicka-ryby.cz/web/index.php" target="_blank">Skaličku</a> a <a href="https://www.inrybar.cz/olomoucky-kraj/piskovna-sinclak/" target="_blank">Šinclák</a></p>
-        <p class="zacatek">Soukromý revír je vodní plocha, která se nachází na soukromém pozemku, rybník většinou vlastní nějaký podnikatel,<br>který si určí ceny a podmínky pro lov, je zde většinou lehčí chytit více a mnohem větších ryb. K lovu na těchto revírech nepotřebujete rybářský lístek,<br>proto si zde může zachytat každý, kdo má nějakou výbavu a nějaké peníze navíc.</p>
+    <div class="content">        
+        <div id="reviryContent">
 
-        <hr>
+            <p class="uvod">Zde se dozvíte něco o mých dvou nejoblibenější soukromých revírech, jedná se o <a href="http://www.skalicka-ryby.cz/web/index.php" target="_blank">Skaličku</a> a <a href="https://www.inrybar.cz/olomoucky-kraj/piskovna-sinclak/" target="_blank">Šinclák</a></p>
+            <p class="zacatek">Soukromý revír je vodní plocha, která se nachází na soukromém pozemku, rybník většinou vlastní nějaký podnikatel,<br>který si určí ceny a podmínky pro lov, je zde většinou lehčí chytit více a mnohem větších ryb. K lovu na těchto revírech nepotřebujete rybářský lístek,<br>proto si zde může zachytat každý, kdo má nějakou výbavu a nějaké peníze navíc.</p>
 
-        <h3><a href="http://www.skalicka-ryby.cz/web/index.php" target="_blank">Soukromý revír Skalička</a></h3>
-        <p>Tento soukromý revír se nachází asi 40 minut od Olomouce v obci Skalička za Hranicemi, samotný revír se nachází mezi poli pod touto obcí,<br>takže je zde klid a rybáři nejsou rušeni projíždějícími auty. K samotnému areálu tohoto revíru se dostává docela špatně, proto když sem někdo pojede poprvé,<br>doporučuji mít navigaci, protože je rybník umístěn za horizontem, spatříte ho, až když dojedete k němu.</p>
-        <p>Povolení k rybolovu se kupuje přímo ve stánku s jídlem u správce revíru. Za velkou výhodu, zde považuji možnost lovit i přes noc,<br>což není na normálních revírech povoleno. Za 50 Kč na den si lze zakoupit místo pro stan či bivak.<br><br>Oproti normálním revírům je zde výhoda lovu na 3 pruty, což je jinak přísně zakázáno, nebo lze zakoupit povolenku s možností lovu na 2 pruty,<br>ale s možností ponechání si jedné ryby za další příplatek, ten se odvíjí od druhu ryby.</p>
-        <p class="ceny">
-        <u>Ceník je zde následující:</u><br>
-        <u>Mimopstruhová povolenka s ponecháním</u><br>
-        cena : 500,- Kč<br>
-        počet ponechaných ryb : 1 ks<br>
-        kapr ( 40 - 60 cm )<br>
-        amur ( 60 - 70 cm )<br>
-        <br>
-        <u>Mimopstruhová povolenka bez ponechání („chyť a pusť“)</u><br>
-        Cena : 450,- Kč / 12 hod. /po-čt/<br>
-        Cena : 550,- Kč / 12 hod. /pá-ne/<br>
-        Cena : 600,- Kč / 24 hod. /po-čt/<br>
-        Cena : 750,- Kč / 24 hod. /pá-ne/<br>
-        <br>
-        <u>Pstruhová povolenka s ponecháním</u><br>
-        Cena : 500,- Kč<br>
-        počet ponechaných ryb : 3 ks<br>
-        pstruh duhový ( 25 - 45 cm )<br>
-        siven americký ( 25 - 45 cm )<br>
-        <br>
-        <u>Pstruhová povolenka bez ponechání („chyť a pusť“)</u><br>
-        Cena : 300,- Kč<br>
-        <br>
-        <u>Lov na „dírkách“</u><br>
-        Cena : 400,- Kč / v ceně jsou 3ks losovité ryby bez omezení délky /
-        </p>
-        
-        <p>Na webových stránkách je v pravidlech napsáno, že se zde nesmí chytat na živou nástrahu a na kukuřici, řepku a pšenici, s čímž souhlasím,<br>protože by to mohlo výrazně znečistit rybník a předem neuvařená kukuřice by mohla ryby ohrozit. Jedno z dalších pravidel je lov na háček bez protihrotu,<br>což si myslím, že je špatně, protože háček nedrží v tlamce ryby tak, jak by měl a může rybu docela dost poranit. </p>
-        <p class="pravidla"><br><u>Všechna pravidla mimopstruhového chytání jsou vypsána zde:</u><br>
-            <br>Povolenka mimopstruhová v PDF formátu ke stažení - <a href="http://www.skalicka-ryby.cz/web/pdf/povolenka_mimopstruhova.pdf" target="_blank"><u>ZDE</u></a><br>
-            1. Rybolov je povolen po zakoupení povolenky u správce nádrže. Prodej povolenek je na místě.<br>
+            <hr>
+            <div id="reviryButtons">
+                <button onclick="changeRevir(-1)"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg></button>
+                <button onclick="changeRevir(1)"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg></button>
+                <!-- Přidej další tlačítka pro další revíry -->
+            </div>
+            <div id="revirSkalicka" class="revir">
+            <h3><a href="http://www.skalicka-ryby.cz/web/index.php" target="_blank">Soukromý revír Skalička</a></h3>
+            <p>Tento soukromý revír se nachází asi 40 minut od Olomouce v obci Skalička za Hranicemi, samotný revír se nachází mezi poli pod touto obcí,<br>takže je zde klid a rybáři nejsou rušeni projíždějícími auty. K samotnému areálu tohoto revíru se dostává docela špatně, proto když sem někdo pojede poprvé,<br>doporučuji mít navigaci, protože je rybník umístěn za horizontem, spatříte ho, až když dojedete k němu.</p>
+            <p>Povolení k rybolovu se kupuje přímo ve stánku s jídlem u správce revíru. Za velkou výhodu, zde považuji možnost lovit i přes noc,<br>což není na normálních revírech povoleno. Za 50 Kč na den si lze zakoupit místo pro stan či bivak.<br><br>Oproti normálním revírům je zde výhoda lovu na 3 pruty, což je jinak přísně zakázáno, nebo lze zakoupit povolenku s možností lovu na 2 pruty,<br>ale s možností ponechání si jedné ryby za další příplatek, ten se odvíjí od druhu ryby.</p>
+            <p class="ceny">
+            <u>Ceník je zde následující:</u><br>
+            <u>Mimopstruhová povolenka s ponecháním</u><br>
+            cena : 500,- Kč<br>
+            počet ponechaných ryb : 1 ks<br>
+            kapr ( 40 - 60 cm )<br>
+            amur ( 60 - 70 cm )<br>
             <br>
-            2. Při nepřítomnosti správce nádrže volejte na tel. čísla: 605 906 093.<br>
+            <u>Mimopstruhová povolenka bez ponechání („chyť a pusť“)</u><br>
+            Cena : 450,- Kč / 12 hod. /po-čt/<br>
+            Cena : 550,- Kč / 12 hod. /pá-ne/<br>
+            Cena : 600,- Kč / 24 hod. /po-čt/<br>
+            Cena : 750,- Kč / 24 hod. /pá-ne/<br>
             <br>
-            3. Povolenými způsoby lovu jsou položená a plavaná.<br>
+            <u>Pstruhová povolenka s ponecháním</u><br>
+            Cena : 500,- Kč<br>
+            počet ponechaných ryb : 3 ks<br>
+            pstruh duhový ( 25 - 45 cm )<br>
+            siven americký ( 25 - 45 cm )<br>
             <br>
-            4. Povoleny jsou nástrahy i návnady rostlinného původu, dále pelety, boilies a krmítkové směsi, lov na nástrahy živočišného původu (žížaly, červi, nástražní rybky nebo jejich části)<br><blockquote>lov do čeřínku je přísně zakázán.</blockquote></p>
-            <p class="pravidla">
+            <u>Pstruhová povolenka bez ponechání („chyť a pusť“)</u><br>
+            Cena : 300,- Kč<br>
             <br>
-            5. <u>Povolenka opravňuje lovícího ponechat si 1 ks těchto druhů a velikostí ryb:</u><br>
-            <blockquote>Kapr 40 cm - 60 cm<br>
-            Amur 60cm - 70 cm<br>
-            <br>
-            Ostatní druhy ryb včetně kaprů a amurů jiných než výše uvedených velikostí musí být šetrně puštěny zpět do vody.</blockquote></p>
-            <p class="pravidla">
-            6. Štika je považována za rybu škodlivou a nesmí být vrácena zpět do vody. Ulovení štiky oznámí lovící neprodleně správci.<br>
-            <br>
-            7. Ponecháním si 1 kusu ryby (s výjimkou štiky) rybolov končí. V průběhu lovu nesmí lovící ryby zaměňovat.<br>
-            <br>
-            8. Pokud lovící hodlá v rybolovu pokračovat, je povinen si před jeho zahájením zakoupit novou povolenku!<br>
-            <br>
-            9. Každý lovící je povinen ulovené ryby, které si ponechá, ihned zapsat do povolenky a na požádání si ponechané ryby nechat přeměřit správcem přehrady nebo oprávněnou osobou určenou správcem.<br><blockquote>Lovící je také povinen na požádání správce ukázat vezírek, tašku, batoh apod.</blockquote></p>
-            <p class="pravidla">
-            10. Povolenku musí lovící po skončení lovu ihned vrátit na určené místo, a to i v případě, že si neponechal žádný úlovek.<br>
-            <br>
-            11. Parkování je povoleno pouze na parkovišti u haly.<br>
-            <br>
-            12. Mládež do 15 let loví za stejných podmínek jako dospělí.<br>
-            <br>
-            13. Platí přísný zákaz lovu ryb na biologickém rybníku nad nádrží Skalička a přísný zákaz kuchání ryb v celém areálu nádrže.<br>
-            <br>
-            14. Lov ryb je povolen na průběžnou montáž s jedním návazcem. V případě, že jde o lov ryb s ponecháním si ulovené ryby, je povolen na dva pruty.<br>
-            Lov systémem „chyť a pusť“ je povolen na tři pruty. Povoleny jsou háčky bez protihrotu, nebo se zamáčknutým protihrotem.<br>
-            <br>
-            15. Při lovu a následné manipulací s rybou musí být použit podběrák a podložka.<br>
-            <br>
-            <u>Denní doby lovu:</u><br>
-            <br>
-            květen, červen, červenec, srpen<br>
-            Po - Čt a Ne…………… 7 - 20 hodin<br>
-            Pá - So…………………… 6 - 21 hodin<br>
-            <br>
-            březen, listopad<br>
-            Po - Ne…………………… 8 - 17 hodin<br>
-            <br>
-            duben, září, říjen<br>
-            Po - Ne…………………… 8 - 17 hodin<br>
-            <br>
-            Rybolov mimo stanovenou denní dobu lovu je možný po dohodě se správcem nádrže!<br>
+            <u>Lov na „dírkách“</u><br>
+            Cena : 400,- Kč / v ceně jsou 3ks losovité ryby bez omezení délky /
+            </p>
+            
+            <p>Na webových stránkách je v pravidlech napsáno, že se zde nesmí chytat na živou nástrahu a na kukuřici, řepku a pšenici, s čímž souhlasím,<br>protože by to mohlo výrazně znečistit rybník a předem neuvařená kukuřice by mohla ryby ohrozit. Jedno z dalších pravidel je lov na háček bez protihrotu,<br>což si myslím, že je špatně, protože háček nedrží v tlamce ryby tak, jak by měl a může rybu docela dost poranit. </p>
+            <p class="pravidla"><br><u>Všechna pravidla mimopstruhového chytání jsou vypsána zde:</u><br>
+                <br>Povolenka mimopstruhová v PDF formátu ke stažení - <a href="http://www.skalicka-ryby.cz/web/pdf/povolenka_mimopstruhova.pdf" target="_blank"><u>ZDE</u></a><br>
+                1. Rybolov je povolen po zakoupení povolenky u správce nádrže. Prodej povolenek je na místě.<br>
+                <br>
+                2. Při nepřítomnosti správce nádrže volejte na tel. čísla: 605 906 093.<br>
+                <br>
+                3. Povolenými způsoby lovu jsou položená a plavaná.<br>
+                <br>
+                4. Povoleny jsou nástrahy i návnady rostlinného původu, dále pelety, boilies a krmítkové směsi, lov na nástrahy živočišného původu (žížaly, červi, nástražní rybky nebo jejich části)<br><blockquote>lov do čeřínku je přísně zakázán.</blockquote></p>
+                <p class="pravidla">
+                <br>
+                5. <u>Povolenka opravňuje lovícího ponechat si 1 ks těchto druhů a velikostí ryb:</u><br>
+                <blockquote>Kapr 40 cm - 60 cm<br>
+                Amur 60cm - 70 cm<br>
+                <br>
+                Ostatní druhy ryb včetně kaprů a amurů jiných než výše uvedených velikostí musí být šetrně puštěny zpět do vody.</blockquote></p>
+                <p class="pravidla">
+                6. Štika je považována za rybu škodlivou a nesmí být vrácena zpět do vody. Ulovení štiky oznámí lovící neprodleně správci.<br>
+                <br>
+                7. Ponecháním si 1 kusu ryby (s výjimkou štiky) rybolov končí. V průběhu lovu nesmí lovící ryby zaměňovat.<br>
+                <br>
+                8. Pokud lovící hodlá v rybolovu pokračovat, je povinen si před jeho zahájením zakoupit novou povolenku!<br>
+                <br>
+                9. Každý lovící je povinen ulovené ryby, které si ponechá, ihned zapsat do povolenky a na požádání si ponechané ryby nechat přeměřit správcem přehrady nebo oprávněnou osobou určenou správcem.<br><blockquote>Lovící je také povinen na požádání správce ukázat vezírek, tašku, batoh apod.</blockquote></p>
+                <p class="pravidla">
+                10. Povolenku musí lovící po skončení lovu ihned vrátit na určené místo, a to i v případě, že si neponechal žádný úlovek.<br>
+                <br>
+                11. Parkování je povoleno pouze na parkovišti u haly.<br>
+                <br>
+                12. Mládež do 15 let loví za stejných podmínek jako dospělí.<br>
+                <br>
+                13. Platí přísný zákaz lovu ryb na biologickém rybníku nad nádrží Skalička a přísný zákaz kuchání ryb v celém areálu nádrže.<br>
+                <br>
+                14. Lov ryb je povolen na průběžnou montáž s jedním návazcem. V případě, že jde o lov ryb s ponecháním si ulovené ryby, je povolen na dva pruty.<br>
+                Lov systémem „chyť a pusť“ je povolen na tři pruty. Povoleny jsou háčky bez protihrotu, nebo se zamáčknutým protihrotem.<br>
+                <br>
+                15. Při lovu a následné manipulací s rybou musí být použit podběrák a podložka.<br>
+                <br>
+                <u>Denní doby lovu:</u><br>
+                <br>
+                květen, červen, červenec, srpen<br>
+                Po - Čt a Ne…………… 7 - 20 hodin<br>
+                Pá - So…………………… 6 - 21 hodin<br>
+                <br>
+                březen, listopad<br>
+                Po - Ne…………………… 8 - 17 hodin<br>
+                <br>
+                duben, září, říjen<br>
+                Po - Ne…………………… 8 - 17 hodin<br>
+                <br>
+                Rybolov mimo stanovenou denní dobu lovu je možný po dohodě se správcem nádrže!<br>
 
-        </p>
-        <p><br>Revír je hezky opečovávaný správcem, zalesněnost je dobře řešena tak, aby se k vodě vlezlo dostatek rybářů, dalo se zde dobře nahazovat do vody, ale zároveň tak,<br>aby v létě stromy vytvářely příjemný stín před sluncem. Správce zde také pravidelně seká trávu zahradním traktůrkem, takže je zde nízká tráva, což ocení každý rybář.</p>
-        <p>Pravidelně také spravuje vybavení areálu, jako jsou například chaty s vybavením, které si lze pronajmout, ať už zde jedete s rodinou na dovolenou,<br>je špatné počasí nebo prostě jen nechcete spát venku. V chatkách najdete vybavenou místnost, jsou zde například dvě postele, rozkládací pohovka, stůl s židlí a záchod.<br>Chatka stojí 1250 Kč za noc.</p>
-        <p>Už při příjezdu uvidíte malý stánek s hotovými jídly, které se se dají koupit za slušné peníze, jako například grilované maso, ale lze tu koupit také různé balené potraviny,<br>například chipsy, různé oplatky atd., pití tu samozřejmě nemůže chybět, to zde najdeme v podobě limonád a také piva.</p>
-        <h4 class="mojevypravaskalicka">Osvědčený rybolov a popis mých 5 výprav</h4>
-        <p>Když jsem zde rybařil poprvé, měl jsem úplně obyčejný prut a naviják, vůbec jsem nekoukal, jak mám navázaný háček ani co na něm mám, kupoval jsem to nejlevnější boilies,<br>popřípadě jsem také chytal na úplně obyčejné pelety. Byl jsem zde 24 h a rybu chytil jen táta, byl to kapr o délce 90 cm a 15 kg,<br>jelikož jsem žádnou rybu nechytil, tak jsem měl poněkud negativní názor na tento revír. </p>
-        <p>Když jsme sem jeli podruhé, tak jsem si půjčil pruty od mamky, které byly lepší než ty, co jsem měl, začal jsem chytat i na lepší boilies a pelety,<br>celkově jsem měl mnohem lépe udělanou sestavu a výsledek byl znát, chytil jsem několik kaprů jeseterů, ten největší měřil 120 cm a uvědomil jsem si,<br>že revír bude mnohem více zarybněn, než jsem si myslel po první výpravě. Kapr, kterého jsem zde chytil, měl nádhernou stavbu těla, měl také hezky vybarvené ploutve, což svědčí o tom,<br>že se tu o to majitel hezky stará. </p>
-        
-        <div class="fotkyskalicka"> 
-            <img class="jeseter120cm" src="jeseter120cm.png">
-            <img class="kaprdruhavyprava" src="kaprprvnivyprava.png">
+            </p>
+            <p><br>Revír je hezky opečovávaný správcem, zalesněnost je dobře řešena tak, aby se k vodě vlezlo dostatek rybářů, dalo se zde dobře nahazovat do vody, ale zároveň tak,<br>aby v létě stromy vytvářely příjemný stín před sluncem. Správce zde také pravidelně seká trávu zahradním traktůrkem, takže je zde nízká tráva, což ocení každý rybář.</p>
+            <p>Pravidelně také spravuje vybavení areálu, jako jsou například chaty s vybavením, které si lze pronajmout, ať už zde jedete s rodinou na dovolenou,<br>je špatné počasí nebo prostě jen nechcete spát venku. V chatkách najdete vybavenou místnost, jsou zde například dvě postele, rozkládací pohovka, stůl s židlí a záchod.<br>Chatka stojí 1250 Kč za noc.</p>
+            <p>Už při příjezdu uvidíte malý stánek s hotovými jídly, které se se dají koupit za slušné peníze, jako například grilované maso, ale lze tu koupit také různé balené potraviny,<br>například chipsy, různé oplatky atd., pití tu samozřejmě nemůže chybět, to zde najdeme v podobě limonád a také piva.</p>
+            <h4 class="mojevypravaskalicka">Osvědčený rybolov a popis mých 5 výprav</h4>
+            <p>Když jsem zde rybařil poprvé, měl jsem úplně obyčejný prut a naviják, vůbec jsem nekoukal, jak mám navázaný háček ani co na něm mám, kupoval jsem to nejlevnější boilies,<br>popřípadě jsem také chytal na úplně obyčejné pelety. Byl jsem zde 24 h a rybu chytil jen táta, byl to kapr o délce 90 cm a 15 kg,<br>jelikož jsem žádnou rybu nechytil, tak jsem měl poněkud negativní názor na tento revír. </p>
+            <p>Když jsme sem jeli podruhé, tak jsem si půjčil pruty od mamky, které byly lepší než ty, co jsem měl, začal jsem chytat i na lepší boilies a pelety,<br>celkově jsem měl mnohem lépe udělanou sestavu a výsledek byl znát, chytil jsem několik kaprů jeseterů, ten největší měřil 120 cm a uvědomil jsem si,<br>že revír bude mnohem více zarybněn, než jsem si myslel po první výpravě. Kapr, kterého jsem zde chytil, měl nádhernou stavbu těla, měl také hezky vybarvené ploutve, což svědčí o tom,<br>že se tu o to majitel hezky stará. </p>
+            
+            <div class="fotkyskalicka image-container"> 
+                <img class="jeseter120cm img" src="jeseter120cm.png">
+                <img class="kaprdruhavyprava img" src="kaprprvnivyprava.png">
+            </div>
+
+            <p>Po této úspěšné výpravě jsem se rozhodl sem jet znova již po týdnu, tak jsme se sem vypravili, ale tentokrát již na 48 hodin rybolovu. Po minulé výpravě jsem měl vysoká očekávání,<br>což bylo chybou, protože v tu dobu byly vysoké teploty a ryby nebraly. Vyzkoušel jsem asi 10 různých nástrah, asi 4 druhy návazců, ale ryby nežraly. Po 44 hodinách se na mě ale usmálo štěstí,<br>protože mi zabral dosud největší jeseter, jakého jsem kdy chytil, měřil 140cm a vážil přes 20 kg, tato ryba mi hodně zlepšila náladu a ještě k tomu to bylo na speciální metodu lovu zvanou Ronnie Rig,<br>což spočívá v tom, že rybaříte s plovoucím boilies, tzv. Pop-Up asi 1,2 m nade dnem ve sloupci vody. Tato ryba je dosud největší, jakou jsem kdy chytil.</p>
+            <div class="image-container">
+                <img class="jeseter140cm img" src="jeseter140cm.png" width="40%">
+            </div>
+            <p>Čtvrtá výprava byla již poněkud na jiné úrovni. Rybařil jsem se svými novými pruty Delphin Etna E3, což jsou skvělé pruty za slušné peníze.<br>Měl jsem také nové navijáky FOX EOS 10000 FD a nový stojan Mivardi. Již předem jsem si telefonicky domluvil to nejlepší místo na rybníce,<br>které se nachází naproti chatám v břízovém lesíku. Toto místo je vyhlášeno největšími úlovky. Při této výpravě jsem již přesně věděl co a jak,<br>tudíž jsem si koupil 60 kg pelet značky COPPENS, které jsou zde nejlepší.</p>
+            <p>Pátá výprava probíhala stejně jako čtvrtá.</p>
+            <p class="konec">Letos v červenci mě čeká již šestá výprava, ovšem mám domluvené místo na druhé straně přehrady, kde jsem ještě nikdy nechytal,<br>takže vůbec nevím, co od toho čekat, jediná změna ve výbavě od minulého roku je ta, že jsme si pořídili RC zavážecí lodičku, díky které si mohu zavést nástrahu i s krmením přesně tam, kam chci.</p>
+            <div class="image-container">
+                <img class="mapaskalicka img" src="mapaskalicka.png">
+            </div>
+            <p>Rozloha: 6 ha</p>
+            <p class="konec1">Nejoblibenější nástrahou jsou zde pelety <a href="https://www.rco-fishing.cz/eshop/pelety-coppens-premium-select-black-halibut-bez-diry-20-kg" target="_blank">Coppens 20mm.</a></p>
         </div>
 
-        <p>Po této úspěšné výpravě jsem se rozhodl sem jet znova již po týdnu, tak jsme se sem vypravili, ale tentokrát již na 48 hodin rybolovu. Po minulé výpravě jsem měl vysoká očekávání,<br>což bylo chybou, protože v tu dobu byly vysoké teploty a ryby nebraly. Vyzkoušel jsem asi 10 různých nástrah, asi 4 druhy návazců, ale ryby nežraly. Po 44 hodinách se na mě ale usmálo štěstí,<br>protože mi zabral dosud největší jeseter, jakého jsem kdy chytil, měřil 140cm a vážil přes 20 kg, tato ryba mi hodně zlepšila náladu a ještě k tomu to bylo na speciální metodu lovu zvanou Ronnie Rig,<br>což spočívá v tom, že rybaříte s plovoucím boilies, tzv. Pop-Up asi 1,2 m nade dnem ve sloupci vody. Tato ryba je dosud největší, jakou jsem kdy chytil.</p>
-        <img class="jeseter140cm" src="jeseter140cm.png" width="40%">
-        <p>Čtvrtá výprava byla již poněkud na jiné úrovni. Rybařil jsem se svými novými pruty Delphin Etna E3, což jsou skvělé pruty za slušné peníze.<br>Měl jsem také nové navijáky FOX EOS 10000 FD a nový stojan Mivardi. Již předem jsem si telefonicky domluvil to nejlepší místo na rybníce,<br>které se nachází naproti chatám v břízovém lesíku. Toto místo je vyhlášeno největšími úlovky. Při této výpravě jsem již přesně věděl co a jak,<br>tudíž jsem si koupil 60 kg pelet značky COPPENS, které jsou zde nejlepší.</p>
-        <p>Pátá výprava probíhala stejně jako čtvrtá.</p>
-        <p class="konec">Letos v červenci mě čeká již šestá výprava, ovšem mám domluvené místo na druhé straně přehrady, kde jsem ještě nikdy nechytal,<br>takže vůbec nevím, co od toho čekat, jediná změna ve výbavě od minulého roku je ta, že jsme si pořídili RC zavážecí lodičku, díky které si mohu zavést nástrahu i s krmením přesně tam, kam chci.</p>
-        <img class="mapaskalicka" src="mapaskalicka.png">
-        <p>Rozloha: 6 ha</p>
-        <p class="konec1">Nejoblibenější nástrahou jsou zde pelety <a href="https://www.rco-fishing.cz/eshop/pelety-coppens-premium-select-black-halibut-bez-diry-20-kg" target="_blank">Coppens 20mm.</a></p>
-    
-        <hr>
-
+        <div id="revirSinclak" class="revir">
         <h3><a href="https://www.inrybar.cz/olomoucky-kraj/piskovna-sinclak/" target="_blank">Soukromý revír Šinclák</a></h3>
         <p>Tento soukromý revír je vzdálený asi 15 minut od Olomouce u obce Štěpánov. Rybník se nachází hned u hlavní cesty, takže by vás zde mohla rušit projíždějící auta.</p>
         <p>Povolenka se zde kupuje u správkyně revíru na recepci hned u příjezdu.</p>
@@ -203,13 +214,17 @@
         
         <h4 class="mojevypravaskalicka">Moje dvě výpravy na Šinclák</h4>
         <p>Popré jsem zde byl v roce 2020, jak jsem již zmiňoval výše, neměl jsem dobrou výbavu ani nástrahy, takže za 24 hodin lovu jsem chytl pouze jednoho kapra, který měřil 60 cm, ale v té době mi udělal velkou radost.</p>
-        <img class="kaprsinclak1" src="kaprsinclak1.jpg" width="40%">
+        <div class="image-container">
+            <img class="kaprsinclak1 img" src="kaprsinclak1.jpg" width="40%">
+        </div>
         <p>Druhá výprava byla už o něčem jiném, pronajali jsme si chatu na 48 hodin, měli už skvělou výbavu a nahazovali jsme pod vrby naproti, kde se schovávalo mnoho ryb.<br>Za 48 hodin jsem chytl asi 25 ryb, byli to převážně kapři a amuři, většinou o velikosti 70-80 cm, ale povedl se jeden, který měl 93 cm a 13,5 kg.</p>
-        <img class="kapr93cm" src="kapr.png" width="40%">
+        <div class="image-container">
+            <img class="kapr93cm img" src="kapr.png" width="40%">
+        </div>
         <p>Letos se zde také chystám a jak jsem už psal výše, letos jsme si pořídili RC zavážecí lodičku, takže si nástrahu i krmení zavezu přímo pod vrby, anižbych se bál toho, že zachytím jednu z větví.</p>
         <p>Rozloha: 0,76 ha</p>
         <p class="konec2">Nejoblibenější nástrahou je zde vyvážené boilie <a href="https://www.nikl.cz/p4367-nikl-criticals-boilie-scopex-squid-150g.php" target="_blank">Nikl Criticals 20mm Devill Krill.</a></p>
-
+        </div>
         <hr>
 
         <h3>Toto jsou mé 2 nejoblibenější soukromé revíry v blízkém okolí Olomouce.</h3>
@@ -217,6 +232,6 @@
 
         
 
-<script src="script.js"></script>    
+    <script src="javascript2.js"></script>
 </body>
 </html>

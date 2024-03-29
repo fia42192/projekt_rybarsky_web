@@ -28,3 +28,4 @@ function hideSidebar() {
   window.onload = function() {
     document.getElementById(reviryIds[currentRevirIndex]).classList.add('active');
   };
+

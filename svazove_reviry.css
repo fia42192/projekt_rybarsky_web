@@ -303,3 +303,17 @@ hr {
     background-color: #0b2f59; /* Barva pozadí při najetí myši */
     transition: background-color 0.3s; /* Plynulý přechod barvy pozadí */
   }
+
+  @media only screen and (max-width: 768px) {
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+    }
+}

@@ -201,3 +201,75 @@ hr {
     background-color: #0b2f59;
     transform: scale(1.05);
 }
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+tr:nth-child(even) {
+    background-color: #add8e6; /* Light blue */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White */
+}
+
+th {
+    background-color: #37677a;
+    color: white;
+}
+
+tr:hover {
+    background-color: #16998e; /* Light yellow */
+    transition: 0.s;
+}
+
+.stika2 {
+    width: 28%;
+    border: 2px solid white;
+    border-radius: 5px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+
+.miryryb {
+    width: 35%;
+    float: right;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 70px;
+    overflow: hidden; /* Přidáno */
+    padding-left: 0px;
+}
+
+.miryryb img {
+    display: block; /* Přidáno */
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+    }
+}

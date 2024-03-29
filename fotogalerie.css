@@ -159,7 +159,7 @@ hr {
 .fotkytovacov2 {
     display: flex;        
     margin-left: 20px; 
-    width: 50%;
+    width: 55%;
     margin-bottom: 5px;
 }
 
@@ -177,7 +177,7 @@ hr {
     border: 2px solid white;
     border-radius: 5px;
     width: 100%;
-    max-height: 13cm;
+    max-height: 18cm;
     object-fit: contain;
 }
 
@@ -313,4 +313,24 @@ hr {
 .f:hover {
     background-color: #0b2f59;
     transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        object-fit: contain;
+        margin: auto; /* Toto zarovná obrázek na střed */
+        float: none; /* Toto zruší původní zarovnání */
+        display: block; /* Toto zajistí, že obrázek bude na novém řádku */
+    }
 }
