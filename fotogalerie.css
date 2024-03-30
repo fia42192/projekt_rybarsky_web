@@ -159,12 +159,12 @@ hr {
 .fotkytovacov2 {
     display: flex;        
     margin-left: 20px; 
-    width: 55%;
+    width: 35%;
     margin-bottom: 5px;
 }
 
 .spolecnafotka {
-    width: 60%;
+    width: 100%;
     border: 2px solid white;
     border-radius: 5px;
     margin-top: 0px;
@@ -182,7 +182,7 @@ hr {
 }
 
 .kapr1 {
-    width: 40%;
+    width: 50%;
     display: block;
     margin-left: 0px;
     margin-right: auto;
