@@ -323,3 +323,33 @@ h4 {
         float: none;
     }
 }
+
+/* Změna šířky a výšky mapy */
+iframe {
+    width: 40%; /* Šířka mapy bude 100% šířky rodičovského elementu */
+    margin: 20px;
+}
+
+/* Přidání okraje kolem mapy */
+iframe {
+    border: 5px solid black; /* Přidá černý okraj o šířce 2px kolem mapy */
+}
+
+/* Zaokrouhlení rohů mapy */
+iframe {
+    border-radius: 10px; /* Zaokrouhlí rohy mapy s poloměrem 10px */
+}
+
+/* Přidání stínu mapě */
+iframe {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Přidá stín mapě */
+}
+
+.iframe2 {
+    width: 40%; /* Šířka mapy bude 100% šířky rodičovského elementu */
+    margin: 20px;
+    margin-bottom: 40px;
+    border: 5px solid black; /* Přidá černý okraj o šířce 2px kolem mapy */
+    border-radius: 10px; /* Zaokrouhlí rohy mapy s poloměrem 10px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Přidá stín mapě */
+}
