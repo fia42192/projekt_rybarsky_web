@@ -116,40 +116,59 @@ hr {
     color: white;
 }
 
+.dravci {
+    display: flex;
+    margin-bottom: 50px;
+}
+
 .stika {
     margin-left: 40px;
     margin-top: 20px;
-    border: 2px solid white;
-    border-radius: 5px;
-    width: 27%;
-    margin-bottom: 40px;
+    border: 2px solid white; 
+    border-radius: 5px; 
+    width: 30%;
+    margin-bottom: 0px;
 }
 
 .candat {
     float: right;
-    width: 65%;
-    margin-right: 65px;
+    width: 50%;
+    margin-right: 10px;
     margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 80px;
     border: 2px solid white;
     border-radius: 5px;
+}
+
+.kapri{
+    display: flex;
+    margin-bottom: 50px;
 }
 
 .kapr {
     margin-left: 40px;
     margin-top: 20px;
     border: 2px solid white; 
-    border-radius: 5px;
+    border-radius: 5px; 
     width: 30%;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .kapr1 {
     float: right;
-    width: 53%;
-    margin-right: 270px;
+    width: 50%;
+    margin-right: 10px;
     margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 80px;
     border: 2px solid white;
     border-radius: 5px;
+}
+
+.amuri {
+    display: flex;
+    margin-bottom: 50px;
 }
 
 .amur {
@@ -158,14 +177,16 @@ hr {
     border: 2px solid white; 
     border-radius: 5px; 
     width: 30%;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .amurbily {
     float: right;
-    width: 52%;
-    margin-right: 290px;
+    width: 50%;
+    margin-right: 10px;
     margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 80px;
     border: 2px solid white;
     border-radius: 5px;
 }
@@ -205,20 +226,28 @@ hr {
 }
 
 
+.tolstolobici {
+    display: flex;
+    margin-bottom: 50px;
+}
+
 .tolstolobik {
     margin-left: 40px;
     margin-top: 20px;
+    margin-bottom: 15px;
     border: 2px solid white;
     border-radius: 5px;
     width: 30%;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .tolstolobik1{
     float: right;
-    width: 32%;
-    margin-right:750px;
+    width: 30%;
+    margin-right: 10px;
     margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 80px;
     border: 2px solid white;
     border-radius: 5px;
 }
