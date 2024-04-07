@@ -163,10 +163,8 @@ h4 {
 }
 
 .mapaskalicka {
-    width: 50%;
-    display: block;
+    width: 41%;
     margin-left: 15px;
-    margin-right: auto;
     border: 2px solid white;
     border-radius: 5px;
 }
@@ -327,7 +325,8 @@ h4 {
 /* Změna šířky a výšky mapy */
 iframe {
     width: 40%; /* Šířka mapy bude 100% šířky rodičovského elementu */
-    margin: 20px;
+    margin-left: 20px;
+    margin-top: 0px;
 }
 
 /* Přidání okraje kolem mapy */
@@ -346,10 +345,15 @@ iframe {
 }
 
 .iframe2 {
-    width: 40%; /* Šířka mapy bude 100% šířky rodičovského elementu */
+    width: 30%; /* Šířka mapy bude 100% šířky rodičovského elementu */
+    height: 690px;
     margin: 20px;
     margin-bottom: 40px;
     border: 5px solid black; /* Přidá černý okraj o šířce 2px kolem mapy */
     border-radius: 10px; /* Zaokrouhlí rohy mapy s poloměrem 10px */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Přidá stín mapě */
+}
+
+.iframe1 {
+    height: 470px;
 }
